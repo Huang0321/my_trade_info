@@ -32,5 +32,5 @@ SYMBOL = 'ONT/USDT'
 RATE_1 = 0.0035
 RATE_2 = 0.0035
 
-MAX_VOLUME = 1000  # 单位： ETH gateio
+MAX_VOLUME = 200  # 单位： ETH gateio
 MIN_VOLUME = 0.001  # 单位： ETH gateio

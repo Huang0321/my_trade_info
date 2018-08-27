@@ -1,6 +1,6 @@
 import gevent
 
-from settings import RATE_1, RATE_2
+from settings import RATE_1, RATE_2, MAX_VOLUME
 from utils import logger
 
 
@@ -39,7 +39,7 @@ def check_balance(client1, client2, data1, data2, symbol):
         volume = int(resp2['data'][coin2]['free'] / data2['data']['ask1'])
         if volume > 0:
             amount = min(data1['data']['bid1_qty'], data2['data']['ask1_qty'],
-                         resp1['data'][coin1]['free'], volume)
+                         resp1['data'][coin1]['free'], volume, MAX_VOLUME)
             make_order(client1, client2, amount, data1['data']['bid1'], data2['data']['ask1'], symbol)
         else:
             logger.info('volume_not_satisfy')
