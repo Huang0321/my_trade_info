@@ -1,0 +1,12 @@
+ErrorCode 10201 binance https://api.binance.com/api/v1/exchangeInfo GET HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v1/exchangeInfo (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:833)'),))
+ErrorCode 10301 gateio {"result":"false","message":"Your order size is too large. The maximum is 1000 ETH","code":20}
+ErrorCode 10301 gateio {"result":"false","message":"Your order size is too small. The minimum is 0.001 ETH","code":20}
+ErrorCode 10301 You don't have enough fund
+start_balance: {'status': 0, 'data': {'ONT': {'free': 340.0, 'used': 0.0, 'total': 340.0}, 'USDT': {'free': 726.371944, 'used': 0.0, 'total': 726.371944}}} {'status': 0, 'data': {'ONT': {'free': 528.44708, 'used': 0.0, 'total': 528.44708}, 'USDT': {'free': 1341.07183423, 'used': 0.0, 'total': 1341.07183423}}}
+check_balace
+make_order
+ErrorCode 10301 binance {"code":-1013,"msg":"Filter failure: MIN_NOTIONAL"}
+make_limit_order: {'status': -1, 'errmsg': 'binance_create_limit_sell_order_failed'} {'status': 0, 'data': {'order_id': '1285135943', 'symbol': 'ONT/USDT', 'side': 'buy', 'price': 2.522, 'amount': 0.471812685, 'timestamp': None}}
+check_balace
+make_order
+make_limit_order: {'status': 0, 'data': {'order_id': '9676100', 'symbol': 'ONT/USDT', 'side': 'sell', 'price': 2.535, 'amount': 32.215, 'timestamp': 1535383169500, 'status': 'open'}} {'status': 0, 'data': {'order_id': '1285140199', 'symbol': 'ONT/USDT', 'side': 'buy', 'price': 2.526, 'amount': 32.215, 'timestamp': None}}

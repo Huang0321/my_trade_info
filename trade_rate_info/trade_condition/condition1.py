@@ -31,10 +31,6 @@ def check_balance(client1, client2, data1, data2, symbol):
     gevent.joinall([task1, task2])
     resp1 = task1.value
     resp2 = task2.value
-    print(3 * resp1['data'][coin1]['total'] * data1['data']['bid1'])
-    print(2 * resp1['data'][coin2]['total'])
-    print(2 * resp2['data'][coin1]['total'] * data2['data']['ask1'])
-    print(3 * resp2['data'][coin2]['total'])
     if (3 * resp1['data'][coin1]['total'] * data1['data']['bid1']) < (2 * resp1['data'][coin2]['total']) or \
             (2 * resp2['data'][coin1]['total'] * data2['data']['ask1']) > (3 * resp2['data'][coin2]['total']):
         logger.info('blance_is_not_satisfied')

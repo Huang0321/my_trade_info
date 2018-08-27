@@ -60,7 +60,7 @@ def main():
     ba = BinanceClient()
     gate = GateioClient()
     client_list = [ba, gate]
-    symbol_list = ['NEO/USDT', 'AE/BTC', 'NAS/ETH', 'AE/ETH', 'XLM/USDT']
+    symbol_list = ['EOS/USDT', 'ONT/USDT', 'ADA/USDT', 'EOS/ETH', 'XRP/USDT']
     # 设置参照值
     value1 = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
     value2 = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]

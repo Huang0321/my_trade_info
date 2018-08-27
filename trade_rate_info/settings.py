@@ -26,8 +26,11 @@ BTC_VALUE = 43773
 ETH_VALUE = 1916
 USDT_VALUE = 6.86
 
-SYMBOL = 'LTC/USDT'
+SYMBOL = 'ONT/USDT'
 
 # 设置交易正反向利差
 RATE_1 = 0.0035
 RATE_2 = 0.0035
+
+MAX_VOLUME = 1000  # 单位： ETH gateio
+MIN_VOLUME = 0.001  # 单位： ETH gateio
