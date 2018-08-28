@@ -34,6 +34,10 @@ def check_balance(client1, client2, data1, data2, symbol):
     if (3 * resp1['data'][coin1]['total'] * data1['data']['bid1']) < (2 * resp1['data'][coin2]['total']) or \
             (2 * resp2['data'][coin1]['total'] * data2['data']['ask1']) > (3 * resp2['data'][coin2]['total']):
         logger.info('blance_is_not_satisfied')
+        if client1.name == 'binance':
+            logger.info("positive %s %s" % (data1['data'], data2['data']))
+        else:
+            logger.info('reverse %s %s' % (data2['data'], data1['data']))
         return {'status': -1, 'errmsg': 'balance_not_satisfied'}
     else:
         volume = int(resp2['data'][coin2]['free'] / data2['data']['ask1'])

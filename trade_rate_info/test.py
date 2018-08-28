@@ -28,7 +28,7 @@ print(gate.fetch_symbol_balance(SYMBOL))
 # print(gate.cancel_order('1285000488', 'EOS/USDT'))
 # print(gate.create_limit_buy_order("EOS/ETH", 0.0001, 5.155))
 # print(gate.create_limit_sell_order('EOS/USDT', 20.2127766, 5.155))
-print(gate.create_limit_buy_order(SYMBOL, 329.4, 2.526))
+# print(gate.create_limit_buy_order(SYMBOL, 329.4, 2.526))
 # print(gate.create_limit_sell_order('EOS/USDT', 100, 5.1690))
 # {'status': 0, 'data': {'order_id': '1285000488', 'symbol': 'EOS/USDT', 'side': 'sell', 'price': 5.169, 'amount': 100.0, 'timestamp': None}}
 # print(gate.cancel_order('1284991374', 'EOS/USDT'))
