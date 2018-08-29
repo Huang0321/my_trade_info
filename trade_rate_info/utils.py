@@ -7,7 +7,7 @@ ch = logging.StreamHandler()
 # 设置文件分类输出
 # debug 级别 log 到 debug 文件
 fh_debug = logging.FileHandler(os.path.join(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs'),
-                                            'binance_gateio_trade_pair_info.log'))
+                                            'binance_gateio_vet_usdt_v10.log'))
 fh_debug.setLevel(logging.DEBUG)
 
 # info级别输出到info文件

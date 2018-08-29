@@ -29,6 +29,7 @@ class BinanceClient(object):
             # 获取货币的名字
             coin1, coin2 = symbol.split('/')
             resp = self.client.fetch_balance()
+            print(resp)
             # 获取货币在账户中的信息
             coin1_blc = resp[coin1]
             coin2_blc = resp[coin2]
